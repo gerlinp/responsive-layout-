@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 90%;
+    align-self: ;
+}
+
+.port-item {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
