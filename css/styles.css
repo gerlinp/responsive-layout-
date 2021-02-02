@@ -1,17 +1,57 @@
 * {
-    box-sizing: border-box;
-}
-
-
-img {
-    max-width: 90%;
-    align-self: ;
-}
-
-.port-item {
     text-align: center;
-}
-
-li {
     list-style: none;
 }
+
+body {
+    background-color: #fafafa;
+}
+
+.html {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.div {
+    padding:10px;
+    margin: 20px;
+}
+.image {
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    max-width: 90%;
+    width: auto;
+}
+
+
+nav ul {
+    list-style: none;
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+   
+    margin: 10px;
+    background-color: white;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: .3s background-color;
+  }
+.header nav a  {
+    text-decoration: none;
+    display: block;
+
+}
+
