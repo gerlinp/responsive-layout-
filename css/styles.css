@@ -1,91 +1,78 @@
+/* Basic Layout */
 * {
     text-align: center;
-    list-style: none;
-    font-family: 'Quicksand', sans-serif;
     font-size: 1.05em;
-    line-height: 40px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
-body {
-    background-color: #dfdfdf;
+body, #contact {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: gray;
 }
 
-.profile {
-    margin-top: 0;
-}
-main {
-    background-color: white;
-    padding-top: 10px;
+#portfolio {
+    background-color: white
 }
 
-footer {
-    border-top: black solid 1px;
-    display: inline;
+footer ul li {
+    display:inline;
+    grid-template-rows: 1fr 1fr;
+    background-color: gray;
 }
-div {
-    padding:5px;
-    margin: 10px;
-}
-.image {
+
+img {
     margin: 0 auto;
     display: grid;
     max-width: 90%;
-    width: auto;
+
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+a {
     display: block;
-  }
-
-nav li {
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px; 
-    margin: 10px;
+    padding: 10px;
+    text-decoration : none;
     background-color: white;
+    margin: 20px;
 }
 
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
 
 /* Styling */
-h1, h3, li{
-    font-weight: 900;
-}
-p {
-    font-size: larger;
-}
-a, a:visited {
-    color: inherit;
-    text-decoration: none;
-    background-color: white;
+
+
+#contact p, #contact a, footer a{   /* set phone and email to be on the same line */
+    display: inline-block;
+    margin: 5px 20px;  
+    background-color: gray;
 }
 
-@media (min-width: 768px) {
-    #portfolio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-    header img {
-        float: right;
-    }
-    header p {
-        text-align: left;
-    }
-    
-    .port-item img {
-        max-width: 100%;
-        display: block;
-    }
-    
-    
-
+.float-left {
+    float:left;
+} 
+.float-right {
+    float: right
 }
+
+a:visited {
+    color:inherit
+}
+/* identifiers */
+/* .html {
+    background-color: lightskyblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+div {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 20px;
+}
+img {
+    border:lightyellow 20px solid; 
+}
+
+a {
+    background-color: lightpink;
+} */
