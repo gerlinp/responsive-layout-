@@ -1,57 +1,106 @@
 * {
     text-align: center;
     list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.05em;
+    line-height: 40px;
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #dfdfdf;
 }
 
-.html {
-    padding: 10px;
-    margin: 10px 0;
+main {
+    background-color: white;
+    padding-top: 10px;
 }
 
-.div {
-    padding:10px;
-    margin: 20px;
+footer {
+    border-top: black solid 1px;
+    display: inline;
+}
+div {
+    padding:5px;
+    margin: 30px;
 }
 .image {
-    text-align: center;
     margin: 0 auto;
     display: grid;
     max-width: 90%;
     width: auto;
 }
 
-
 nav ul {
     list-style: none;
-
     text-align: center;
     padding: 0;
     margin: 0;
+    display: grid;
   }
 
-  nav li {
-    font-family: 'Oswald', sans-serif;
+nav li {
     font-size: 1.2em;
     line-height: 40px;
-    height: 40px;
-   
+    height: 40px; 
     margin: 10px;
     background-color: white;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    transition: .3s background-color;
-  }
-.header nav a  {
-    text-decoration: none;
-    display: block;
-
 }
 
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+/* Styling */
+h1, h3, li{
+    font-weight: 900;
+}
+p {
+    font-size: larger;
+}
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.profile {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav-top ul, li{
+        display: inline-block;
+        overflow: hidden;
+        background-color: #dfdfdf;
+    }
+    
+    .nav-top a {
+        background-color: #dfdfdf; 
+        display: inline-block;
+    }
+    header img {
+        float: right;
+    }
+    header p {
+        text-align: left;
+    }
+    
+    .port-item img {
+        max-width: 100%;
+        display: block;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    #portfolio {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
