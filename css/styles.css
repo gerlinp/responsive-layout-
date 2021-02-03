@@ -74,6 +74,7 @@ p {
 a:visited {
     color:inherit
 }
+<<<<<<< HEAD
 .divpadding {
     padding: 20px;
     margin-bottom: 20px;
@@ -99,6 +100,9 @@ a:visited {
 }
 
 /*  --------------------identifiers---------------------- */
+=======
+/* identifiers */
+>>>>>>> parent of 2609dd9... mobile layout complete
 /* .html {
      background-color: lightskyblue; 
 }
