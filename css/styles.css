@@ -1,33 +1,41 @@
 /* Basic Layout */
 * {
     text-align: center;
-    font-size: 1.05em;
+    font-size: 1.03em;
     text-decoration: none;
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
 }
-
-body, #contact {
+body, #contact, #skills {
     display: grid;
     grid-template-rows: 1fr;
     background-color: gray;
+    text-align: center;
 }
 
-#portfolio {
+main {
     background-color: white
 }
 
+.header{
+    padding-top:10px;
+    margin-top: 10px;
+}
+
+
 footer ul li {
     display:inline;
-    grid-template-rows: 1fr 1fr;
     background-color: gray;
+}
+
+.foot-nav {
+    display: none;
 }
 
 img {
     margin: 0 auto;
     display: grid;
     max-width: 90%;
-
 }
 
 a {
@@ -37,6 +45,14 @@ a {
     background-color: white;
     margin: 20px;
 }
+
+p {
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    max-width: 70%;
+    margin: 0 auto 30px;        
+}
+
 
 
 /* Styling */
@@ -58,23 +74,44 @@ a {
 a:visited {
     color:inherit
 }
-
-
-/*  --------------------identifiers---------------------- */
-/* .html {
-    background-color: lightskyblue;
+.divpadding {
     padding: 20px;
     margin-bottom: 20px;
 }
+
+/*  --------------------Media Queries---------------------- */
+ 
+
+@media (min-width: 768px) {
+    #portfolio { 
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* changes grid to two columns */
+    }
+    
+    .backtotop {
+        display: none; /* removes backtotop link */
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+/*  --------------------identifiers---------------------- */
+/* .html {
+     background-color: lightskyblue; 
+}
 div {
-    background-color: lightgreen;
+    background-color: lightgreen; 
     padding: 20px;
     margin: 20px;
 }
-img {
+ img {
     border:lightyellow 20px solid; 
 }
 
 a {
     background-color: lightpink;
 } */
+
