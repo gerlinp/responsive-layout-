@@ -10,6 +10,9 @@ body {
     background-color: #dfdfdf;
 }
 
+.profile {
+    margin-top: 0;
+}
 main {
     background-color: white;
     padding-top: 10px;
@@ -21,7 +24,7 @@ footer {
 }
 div {
     padding:5px;
-    margin: 30px;
+    margin: 10px;
 }
 .image {
     margin: 0 auto;
@@ -35,7 +38,7 @@ nav ul {
     text-align: center;
     padding: 0;
     margin: 0;
-    display: grid;
+    display: block;
   }
 
 nav li {
@@ -63,28 +66,14 @@ p {
 a, a:visited {
     color: inherit;
     text-decoration: none;
-}
-
-.profile {
-    margin-top: 0;
+    background-color: white;
 }
 
 @media (min-width: 768px) {
     #portfolio {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .nav-top ul, li{
-        display: inline-block;
-        overflow: hidden;
-        background-color: #dfdfdf;
-    }
-    
-    .nav-top a {
-        background-color: #dfdfdf; 
-        display: inline-block;
-    }
+      }
     header img {
         float: right;
     }
@@ -97,10 +86,6 @@ a, a:visited {
         display: block;
     }
     
-}
+    
 
-@media (min-width: 1024px) {
-    #portfolio {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
