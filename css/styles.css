@@ -10,28 +10,21 @@ body, #contact, #skills {
     display: grid;
     grid-template-rows: 1fr;
     background-color: gray;
-    text-align: center;
 }
-
-main {
-    background-color: white
-}
-
-.header{
+.header, h2{
     padding-top:10px;
     margin-top: 10px;
 }
 
-
+main, nav a {
+    background-color: white;
+}
 footer ul li {
     display:inline;
-    background-color: gray;
 }
-
 .foot-nav {
     display: none;
 }
-
 img {
     margin: 0 auto;
     display: grid;
@@ -42,18 +35,14 @@ a {
     display: block;
     padding: 10px;
     text-decoration : none;
-    background-color: white;
     margin: 20px;
 }
-
-p {
+port-item p, header p {
     margin-inline-start: 30px;
     margin-inline-end: 30px;
     max-width: 70%;
     margin: 0 auto 30px;        
 }
-
-
 
 /* Styling */
 
@@ -61,7 +50,6 @@ p {
 #contact p, #contact a, footer a{   /* set phone and email to be on the same line */
     display: inline-block;
     margin: 5px 20px;  
-    background-color: gray;
 }
 
 .float-left {
@@ -71,18 +59,25 @@ p {
     float: right
 }
 
-a:visited {
+a:visited, .foot-nav a:visited, a {
     color:inherit
 }
 .divpadding {
     padding: 20px;
-    margin-bottom: 20px;
+    background-color: white;
 }
 
+footer a {
+    background-color: gray;
+}
 /*  --------------------Media Queries---------------------- */
  
 
 @media (min-width: 768px) {
+    * {
+        font-size: 1em;
+        font-weight: bold;
+    }
     #portfolio { 
         display: grid;
         grid-template-columns: 1fr 1fr; /* changes grid to two columns */
@@ -91,9 +86,39 @@ a:visited {
     .backtotop {
         display: none; /* removes backtotop link */
     }
+    .foot-nav {
+        display: block; /* adds footer navigation link */
+    }
+ 
+    header {
+        overflow:hidden
+    }
+    header nav {
+        margin:0;
+        padding:0;
+  
+    }
+    header li {
+        display:inline;
+    }
 
+    header a {
+        display:inline-block;
+        background-color: gray;
+    }
+    header img {
+        float: right;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom:20px;
+    }
+    header p {
+        text-align: left;
+        font-size: 25px;
+        margin-left: 20px;
+    
+    }
 }
-
 @media (min-width: 1024px) {
 
 }
@@ -113,5 +138,5 @@ div {
 
 a {
     background-color: lightpink;
-} */
+  }   */
 
