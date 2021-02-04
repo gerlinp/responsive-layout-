@@ -45,7 +45,7 @@ footer li {
     margin: 0px 6px
 }
 
-.footer-nav {
+#footer-nav {
     display: none;
 }
 
@@ -83,6 +83,54 @@ a:-webkit-any-link {
     z-index: -1;
 }
  
+/*  -----------------Media Queries-------------------- */
+
+@media (min-width: 768px) {
+    * {
+        font-size: .99em;
+    }
+    header nav li {
+        display: inline;
+    }
+    header nav a {
+        display: inline-block;
+        width: 25%;
+        margin: 5px;
+    }
+    #profile {
+        margin: 20px 20px 0 0;  
+        overflow: auto;
+    }
+    #profile img {
+        float: right;
+        display: block;
+        max-width: 30%;
+    }
+    
+    #profile p {
+        margin-right: 200px;
+        font-size: 20px;
+    }
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    #backtotop {
+        display: none;
+    }
+    #footer-nav {
+        display: block;
+        float: right;
+    }
+    #footer-h3 {
+        float: left;
+        margin-top: 0px;
+    }
+    #footer li {
+
+    }
+
 /*  --------------------identifiers---------------------- */
 /* .html {
      background-color: lightskyblue; 
