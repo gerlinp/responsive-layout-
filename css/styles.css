@@ -4,29 +4,26 @@
     background-color: slategray;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.05em;
+    font-size: 1em;
     list-style-type: none;
     margin: 20px auto;
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.1em;
 }
-
 body {
     max-width: 90%;
     margin: 0 auto;
 }
-
 a {
     background-color: transparent;
 }
 header a{
     color: slategray;
-    margin: 20px;
+    margin: 0px;
     display: block;
-    padding: 15px;
+    padding: 0px;
 }
-
 a, h1, h2, h3 {
     font-weight: bold;
 }
@@ -45,10 +42,17 @@ footer li {
     margin: 0px 6px
 }
 
-#footer-nav {
+.footer-nav {
     display: none;
 }
 
+#backtotop {
+    float: right;
+}
+
+#footer-h3 {
+    float:left;
+}
 
 /*  --------------------Styling---------------------- */
  .wipe {
@@ -92,9 +96,13 @@ a:-webkit-any-link {
     header nav li {
         display: inline;
     }
+
+    footer nav {
+        display: inline;
+    }
     header nav a {
         display: inline-block;
-        width: 25%;
+        width: 15%;
         margin: 5px;
     }
     #profile {
@@ -111,7 +119,7 @@ a:-webkit-any-link {
         margin-right: 200px;
         font-size: 20px;
     }
-    #portfolio {
+    .portfolio {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
@@ -119,36 +127,30 @@ a:-webkit-any-link {
     #backtotop {
         display: none;
     }
-    #footer-nav {
-        display: block;
+    .footer-nav {
+        display: grid;
         float: right;
+        margin: 20px;
     }
-    #footer-h3 {
-        float: left;
-        margin-top: 0px;
+
+    .wipe {
+        border: transparent;   
     }
 }
 
+
 @media (min-width: 1024px) {
-
- 
-
     header nav a {
          width: auto;
     }
      header ul {
          display: flex;
      }
-
-    #portfolio {
+    .portfolio {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 20px;
     }
-    .wipe {
-        border: transparent;   
-    }
-
 }
 /*  --------------------identifiers---------------------- */
 /* .html {

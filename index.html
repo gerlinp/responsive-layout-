@@ -15,15 +15,18 @@
         <div id="navbar">
             <nav>
                 <ul>
-                    <li><h1>Student Name</h1></li>
-                    <div id="header-nav">
-                        <li><a class="wipe link" href="#top">HOME</a></li>
-                        <li><a class="wipe link" href="#">PORTFOLIO</a></li>
-                        <li><a class="wipe link" href="#">CONTACT</a></li>
-                    </div>
-                    <div class="clear"></div>
+                    <li id="header-nav"><h1>Student Name</h1></li>
+                    <li>
+                        <ul>
+                            <li><a class="wipe link" href="#top">HOME</a></li>
+                            <li><a class="wipe link" href="#portfolio">PORTFOLIO</a></li>
+                            <li><a class="wipe link" href="#contact">CONTACT</a></li>
+                            <li><a class="wipe link" href="#skills">SKILLS</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
+            <div class="clear"></div>
         </div>
             <div id="profile">
                 <img src="images/responsive-layout-profile.png" alt="profile picture">
@@ -31,8 +34,8 @@
             </div>
     </header>
     <main>
-        <h2>PORTFOLIO</h2>
-        <div id="portfolio">
+        <h2 id="portfolio">PORTFOLIO</h2>
+        <div class="portfolio" >
         <div > 
                 <img src="images/portfolio-1.png" alt="Marketing Page">
                 <h3><strong>Marketing Page</strong></h3>
@@ -64,16 +67,16 @@
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
             </div>
         </div>    
-        </div>
+
     </main>
     <div>
         <div>
-            <h2>SKILLS</h2></div>
+            <h2 id="skills">SKILLS</h2></div>
                 <p>ALWAYS FOCUSED!</p>
             <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt="man typing while desk on fire">
         <hr>
         <div>    
-            <h2>CONTACT</h2>
+            <h2 id="contact">CONTACT</h2>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <p>Phone  <a href="tel:5554280940">+1(111)555-1234</a></p>
 
@@ -83,17 +86,18 @@
     <hr>
     <footer>
         <nav>
-        <ul>
-            <span id="footer-h3">
-                <li><h3><a>Student name</a></h3></li>
-            </span>
-            <li id="backtotop"><h3><a href="#top">Back to Top</a></h3></li>
-            <span id="footer-nav">
-                <li><a href="#top">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </span> 
-            </ul>
+        <ul> 
+            <li id="footer-h3"><h3><a>Student name</a></h3></li>   
+            <li class="footer-nav">
+                <ul>
+                    <li id="backtotop"><h3><a href="#top">Back to Top</a></h3></li>
+                    <li><a class="wipe link" href="#top">HOME</a></li>
+                    <li><a class="wipe link" href="#portfolio">PORTFOLIO</a></li>
+                    <li><a class="wipe link" href="#contact">CONTACT</a></li>
+                    <li><a class="wipe link" href="#skills">SKILLS</a></li>
+                </ul>
+            </li>
+        </ul>
         </nav>
     </footer>
 </div>
