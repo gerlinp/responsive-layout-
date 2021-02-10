@@ -109,6 +109,11 @@ header .wipe {
 }
 
 
+.profile {
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+}
+
 
 
 
@@ -164,7 +169,6 @@ header .wipe {
         flex: 40%;
         margin: 1%;
       }
-
 }
 
 @media (min-width: 1024px) {
@@ -177,6 +181,10 @@ header .wipe {
         flex: 28%;
         
       }
+
+      .profile p {
+        margin-top: 80px;
+    }
 
 }
 
