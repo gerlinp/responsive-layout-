@@ -1,63 +1,80 @@
-/*-------------- Main layouts ---------------*/
+/*-------------- Main styles ---------------*/
 
 * {
-    background-color: slategray;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1em;
-    list-style-type: none;
-    margin: 20px auto;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    background-color: slategrey;
 }
+
 body {
-    max-width: 90%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    width: 90%;
     margin: 0 auto;
+    text-align: center;
+
 }
-a {
-    background-color: transparent;
-}
-header a{
-    color: slategray;
-    margin: 0px;
-    display: block;
-    padding: 0px;
-}
-a, h1, h2, h3 {
-    font-weight: bold;
-}
+
 p {
-    max-width: 75%;
+    font-size: 1.4em;
 }
 
 img {
     max-width: 100%;
 }
 
-footer li {
-    display: inline-block;
-    font-size: 15px;
-    padding: 0px 0px;
-    margin: 0px 6px
+a, a:visited {
+    text-decoration: none;
+    color: white;
 }
 
-.footer-nav {
+/*-------------- Main layouts ---------------*/
+
+header .name {
+    margin: 0;
+
+}
+
+h1, h3 {
+    font-size: 1.5em;
+}
+
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.name a,
+.main-nav a, footer a {
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.main-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    justify-content: space-between
+}
+
+.foot-nav-item {
     display: none;
 }
-
-#backtotop {
-    float: right;
+main {
+    margin-top: 50px;
 }
 
-#footer-h3 {
-    float:left;
-}
 
 /*  --------------------Styling---------------------- */
  .wipe {
     transition: color 0.3s;
-    border: 5px solid #fff;
     overflow: hidden;
  }
  .link {
@@ -87,71 +104,84 @@ a:-webkit-any-link {
     z-index: -1;
 }
  
+header .wipe {
+    border: 5px solid #fff;
+}
+
+
+
+
+
 /*  -----------------Media Queries-------------------- */
 
 @media (min-width: 768px) {
-    * {
-        font-size: .99em;
-    }
-    header nav li {
-        display: inline;
-    }
+    .main-header,
+    .main-nav,
+    .profile
+     {
+        display: flex;
+     }
 
-    footer nav {
-        display: inline;
+     .profile {
+         flex-direction: row-reverse;
+     }
+     .profile p {
+         text-align: left;
+         margin-right: 20px; 
+
+     }
+     .main-header {
+         flex-direction: column;
+         align-items: center;
+     }
+    .footer,
+    .footer-nav {
+        display: flex;
+        margin-top: 20px;
     }
-    header nav a {
-        display: inline-block;
-        width: 15%;
-        margin: 5px;
-    }
-    #profile {
-        margin: 20px 20px 0 0;  
-        overflow: auto;
-    }
-    #profile img {
-        float: right;
+    .foot-nav-item {
         display: block;
-        max-width: 30%;
     }
-    
-    #profile p {
-        margin-right: 200px;
-        font-size: 20px;
+    header .wipe {
+        border-color: transparent;
     }
-    .portfolio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-    }
-    #backtotop {
+    #backtotop{
         display: none;
     }
-    .footer-nav {
-        display: grid;
-        float: right;
-        margin: 20px;
-    }
 
-    .wipe {
-        border: transparent;   
-    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+      }
+      
+      .col {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 40%;
+        margin: 1%;
+      }
+
 }
-
 
 @media (min-width: 1024px) {
-    header nav a {
-         width: auto;
-    }
-     header ul {
-         display: flex;
+     .main-header {
+         flex-direction: row;
+         justify-content: space-between;
      }
-    .portfolio {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 20px;
-    }
+    
+     .col {
+        flex: 28%;
+        
+      }
+
 }
+
+
+
 /*  --------------------identifiers---------------------- */
 /* .html {
      background-color: lightskyblue; 

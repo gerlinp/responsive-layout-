@@ -7,68 +7,67 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
- 
 <body>
-<div >
-    <header > 
-        <div id="navbar">
-            <nav>
-                <ul>
-                    <li id="header-nav"><h1>Student Name</h1></li>
-                    <li>
-                        <ul>
-                            <li><a class="wipe link" href="#top">HOME</a></li>
-                            <li><a class="wipe link" href="#portfolio">PORTFOLIO</a></li>
-                            <li><a class="wipe link" href="#contact">CONTACT</a></li>
-                            <li><a class="wipe link" href="#skills">SKILLS</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="clear"></div>
-        </div>
-            <div id="profile">
+
+    
+    <header class="main-header"> 
+        <h1 class="name"><a href="#">Student Name</a></h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a class="wipe link item" href="#top">HOME</a></li>
+                <li><a class="wipe link item" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="wipe link item" href="#skills">SKILLS</a></li>
+                <li><a class="wipe link item" href="#contact">CONTACT</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+            <div class="profile">
                 <img src="images/responsive-layout-profile.png" alt="profile picture">
                 <p>Hi! I'm a front-end developer who loves responsive desigh and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
             </div>
-    </header>
+
+
     <main>
         <h2 id="portfolio">PORTFOLIO</h2>
-        <div class="portfolio" >
-        <div > 
-                <img src="images/portfolio-1.png" alt="Marketing Page">
+        <div class="row" >
+            <div class="col"> 
+                <img  src="images/portfolio-1.png" alt="Marketing Page">
                 <h3><strong>Marketing Page</strong></h3>
                 <p> This project searches through a specific database to find information that the user is trying to look up.</p>
             </div>
-            <div>
+            <div class="col">
                 <img src="images/portfolio-2.png" alt="Search Page">
                 <h3><strong>Search Page</strong></h3>
                 <p>This project shes the front page of a marketing website meant for a specific business I'm interested in.</p>
             </div>
-            <div>
+            <div class="col">
                 <img src="images/portfolio-3.png" alt="Travel App">
                 <h3><strong>Travel App</strong></h3>
                 <p>This project compates travel times based on different transportation methods and tells you the best one.</p>
             </div>
-            <div>
+            <div class="col">
                 <img src="images/portfolio-4.png" alt="Map of Favorite Spots">
                 <h3><strong>Map of Favorite Spots</strong></h3>
                 <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour</p>
             </div>
-            <div>
+            <div class="col">
                 <img src="images/portfolio-5.png" alt="Photo Gallery">
                 <h3><strong>Photo Gallery</strong></h3>
                 <p>This project shows pictures from a recent trup the viewer and allows them to easily navigate through photos.</p>
             </div>
-            <div>
-                <img src="images/portfolio-6.png" alt="Calculator">
+            <div class="col">
+                <img class="item"  src="images/portfolio-6.png" alt="Calculator">
                 <h3><strong>Calculator</strong></h3>
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
             </div>
         </div>    
 
     </main>
+    <hr>
     <div>
         <div>
             <h2 id="skills">SKILLS</h2></div>
@@ -84,25 +83,24 @@
         </div>
     
     <hr>
-    <footer>
+    <footer class="footer"> 
+        <h3 class="name"><a href="#">Student Name</a></h3>
         <nav>
-        <ul> 
-            <li id="footer-h3"><h3><a>Student name</a></h3></li>   
-            <li>
-                <ul>
-                    <li id="backtotop"><h3><a href="#top">Back to Top</a></h3></li>
-                    <li><a class="wipe link footer-nav" href="#top">HOME</a></li>
-                    <li><a class="wipe link footer-nav" href="#portfolio">PORTFOLIO</a></li>
-                    <li><a class="wipe link footer-nav" href="#contact">CONTACT</a></li>
-                    <li><a class="wipe link footer-nav" href="#skills">SKILLS</a></li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="footer-nav">
+                <li id="backtotop"><h3><a href="#top">Back to Top</a></h3></li>
+                <li><a class="wipe link item foot-nav-item" href="#top">HOME</a></li>
+                <li><a class="wipe link item foot-nav-item" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="wipe link item foot-nav-item" href="#skills">SKILLS</a></li>
+                <li><a class="wipe link item foot-nav-item" href="#contact">CONTACT</a></li>
+                
+            </ul>
         </nav>
     </footer>
 </div>
-</div>  
+
 <script src="app.js"></script> 
 </body>
 
 </html>
+
+
